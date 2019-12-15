@@ -13,6 +13,6 @@ RUN addgroup -g 1000 -S app && \
 
 USER 1000
 
-EXPOSE 8000
+EXPOSE 8080
 
 CMD ["gunicorn", "-b", "0.0.0.0:8080", "server"]
